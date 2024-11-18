@@ -5,8 +5,8 @@ use CodeIgniter\Config\BaseConfig;
 /** set your paypal credential **/
 class Paypal extends BaseConfig
 {
-    public $paypalClientId = 'AeNJA4G2wIUYx7o4Y64wUob_fRA89tS5sG7FWMPgguIaQb5c6DRjFSGc6-Mtw3KQxJEOCMt9Y4tXrKMr';
-    public $paypalSecret = 'EIiayEzm0E1rCU195Ua5bBvMHDQzxO4pts4XVjNIwczuWGSmB1bOkg5VTRtJZU_j9m0xng3aA8gs0_ce';
+    public $paypalClientId = '-';
+    public $paypalSecret = '666+++66+9966999';
 
     /**
      * SDK configuration
