@@ -235,17 +235,17 @@ class Page extends BaseController
         }
         $mail = new PHPMailer(TRUE);
         try {
-            $mail->setFrom('noreply-eduschool@ditotase.com', 'Eduschool Application');
+            $mail->setFrom('noreply@domain.com', ' Application');
             $mail->addAddress($from, '');
-            $mail->addReplyTo('eduschool@ditotase.com', 'Eduschool Administration');
+            $mail->addReplyTo('email@domain.com', ' Administration');
             if (count($addresses) > 1) {
                 $mail->addCC($cc1);
             }
 			$mail->isSMTP();
-            $mail->Host = 'mail.ditotase.com';
+            $mail->Host = 'mail.domain.com';
             $mail->SMTPAuth = TRUE;
             $mail->SMTPSecure = 'tls';
-            $mail->Username = 'admin-eduschool@ditotase.com';
+            $mail->Username = '';
             $mail->Password = '*AEM@243#ZAD.cd';
             $mail->Port = 587;
             $mail->SMTPOptions = array(

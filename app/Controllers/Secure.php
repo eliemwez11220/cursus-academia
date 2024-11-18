@@ -673,7 +673,7 @@ class Secure extends BaseController
         $lieu = $this->getClientLocation();
         $datetime = date('Y-m-d H:i:s');
         $username = (!empty($email)) ? $email : 'Anonyme';
-        $subject = "Access Account $datetime - Eduschool Application";
+        $subject = "Access Account $datetime -  Application";
         $from = "";
         $cc1 = "";
         $addresses = mb_split(";", $email);
