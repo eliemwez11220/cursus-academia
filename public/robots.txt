@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ditotase.com/public/sitemap.xml

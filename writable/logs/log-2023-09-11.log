@@ -1,0 +1,37 @@
+CRITICAL - 2023-09-11 18:30:16 --> require_once(C:\laragon\www\tutorial\cursus\app\ThirdParty/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+#0 C:\laragon\www\tutorial\cursus\app\Controllers\Secure.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:...', 'C:\\laragon\\www\\...', 13)
+#1 C:\laragon\www\tutorial\cursus\app\Controllers\Secure.php(13): require_once()
+#2 C:\laragon\www\tutorial\cursus\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\tutorial\cursus\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#4 C:\laragon\www\tutorial\cursus\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#7 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#8 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\tutorial\cursus\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-11 18:36:35 --> Error connecting to the database: Unknown database 'cursus_academique_db'
+CRITICAL - 2023-09-11 18:36:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'cursus_academique_db'
+#0 C:\laragon\www\tutorial\cursus\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\tutorial\cursus\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\laragon\www\tutorial\cursus\app\Models\AppModel.php(114): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\laragon\www\tutorial\cursus\app\Controllers\Secure.php(36): App\Models\AppModel->fetch_count('ts_admins', Array)
+#4 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(824): App\Controllers\Secure->signIn()
+#5 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Secure))
+#6 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\tutorial\cursus\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-11 19:11:15 --> Invalid file: app/rapports/etudiants/listing.php
+#0 C:\laragon\www\tutorial\cursus\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app/rapports/et...')
+#1 C:\laragon\www\tutorial\cursus\system\Common.php(1097): CodeIgniter\View\View->render('app/rapports/et...', Array, true)
+#2 C:\laragon\www\tutorial\cursus\app\Views\layouts\app.php(533): view('app/rapports/et...')
+#3 C:\laragon\www\tutorial\cursus\system\View\View.php(214): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\tutorial\cursus\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\tutorial\cursus\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#6 C:\laragon\www\tutorial\cursus\app\Controllers\Office.php(148): view('layouts/app', Array)
+#7 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(824): App\Controllers\Office->students()
+#8 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#9 C:\laragon\www\tutorial\cursus\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tutorial\cursus\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

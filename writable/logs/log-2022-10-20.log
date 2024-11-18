@@ -1,0 +1,118 @@
+CRITICAL - 2022-10-20 15:42:34 --> Invalid file: pages/login_guest.php
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/login_gue...')
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('pages/login_gue...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\main.php(35): view('pages/login_gue...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/main', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Secure.php(640): view('layouts/main', Array)
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Secure->students()
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Secure))
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-20 15:46:22 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\students\espunilu\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\students\espunilu\system\Model.php(717): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\students\espunilu\app\Controllers\Secure.php(576): CodeIgniter\Model->__call('login_eleves', Array)
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Secure->students()
+#4 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Secure))
+#5 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-10-20 15:50:36 --> Error connecting to the database: Unknown database 'espunilu'
+CRITICAL - 2022-10-20 15:50:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'espunilu'
+#0 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\students\espunilu\system\Database\BaseBuilder.php(1576): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(165): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#3 C:\xampp\htdocs\students\espunilu\app\Controllers\Secure.php(573): App\Models\AppModel->fetch_field_value('ts_annees', Array)
+#4 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Secure->students()
+#5 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Secure))
+#6 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-10-20 15:50:53 --> Unknown column 'parent_code' in 'where clause'
+CRITICAL - 2022-10-20 15:50:53 --> Unknown column 'parent_code' in 'where clause'
+#0 C:\xampp\htdocs\students\espunilu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\students\espunilu\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\students\espunilu\app\Controllers\Secure.php(576): App\Models\AppModel->login_eleves(Array, Array, 'row')
+#6 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Secure->students()
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Secure))
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-10-20 16:06:52 --> Table 'deliberation.csr22268' doesn't exist
+CRITICAL - 2022-10-20 16:06:52 --> Table 'deliberation.csr22268' doesn't exist
+#0 C:\xampp\htdocs\students\espunilu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\students\espunilu\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\students\espunilu\app\Controllers\Secure.php(576): App\Models\AppModel->fetch_orWhere_data(Array, Array, 'row')
+#6 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Secure->students()
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Secure))
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 16:10:46 --> Invalid file: tiers/dossier/parcours.php
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tiers/dossier/p...')
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('tiers/dossier/p...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\tiers.php(460): view('tiers/dossier/p...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/tiers', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(109): view('layouts/tiers', Array)
+#7 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(40): App\Controllers\Home->view('dossier', 'parcours', NULL)
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Home->_remap('view', 'dossier', 'parcours')
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-20 16:10:59 --> Invalid file: tiers/cours/cotes.php
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tiers/cours/cot...')
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('tiers/cours/cot...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\tiers.php(460): view('tiers/cours/cot...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/tiers', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(109): view('layouts/tiers', Array)
+#7 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(40): App\Controllers\Home->view('cours', 'cotes', NULL)
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Home->_remap('view', 'cours', 'cotes')
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-20 16:13:26 --> Invalid file: app/overview/tiers.php
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app/overview/ti...')
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/overview/ti...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\tiers.php(543): view('app/overview/ti...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/tiers', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(51): view('layouts/tiers', Array)
+#7 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(40): App\Controllers\Home->index(NULL, NULL, NULL)
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Home->_remap('index')
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-20 16:52:20 --> Undefined array key "parent_nom_tuteur"
+#0 C:\xampp\htdocs\students\espunilu\app\Views\etudiant\profil.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 195)
+#1 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('etudiant/profil', Array, true)
+#4 C:\xampp\htdocs\students\espunilu\app\Views\layouts\tiers.php(315): view('etudiant/profil')
+#5 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/tiers', Array, true)
+#8 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(59): view('layouts/tiers', Array)
+#9 C:\xampp\htdocs\students\espunilu\app\Controllers\Home.php(39): App\Controllers\Home->index(NULL, NULL, NULL)
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Home->_remap('index')
+#11 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}

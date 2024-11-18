@@ -1,0 +1,170 @@
+CRITICAL - 2022-10-16 01:53:05 --> Undefined array key "matiere_max_periode"
+#0 C:\xampp\htdocs\students\espunilu\app\Views\app\cours\create\cote.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 130)
+#1 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/cours/creat...', Array, true)
+#4 C:\xampp\htdocs\students\espunilu\app\Views\layouts\app.php(521): view('app/cours/creat...')
+#5 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#8 C:\xampp\htdocs\students\espunilu\app\Controllers\Cours.php(166): view('layouts/app', Array)
+#9 C:\xampp\htdocs\students\espunilu\app\Controllers\Cours.php(49): App\Controllers\Cours->addForm('cote', NULL, NULL)
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Cours->_remap('addForm', 'cote')
+#11 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cours))
+#12 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-10-16 02:08:25 --> Undefined array key "matiere_max_examen"
+#0 C:\xampp\htdocs\students\espunilu\app\Views\app\cours\create\cote.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 270)
+#1 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/cours/creat...', Array, true)
+#4 C:\xampp\htdocs\students\espunilu\app\Views\layouts\app.php(521): view('app/cours/creat...')
+#5 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#8 C:\xampp\htdocs\students\espunilu\app\Controllers\Cours.php(166): view('layouts/app', Array)
+#9 C:\xampp\htdocs\students\espunilu\app\Controllers\Cours.php(49): App\Controllers\Cours->addForm('cote', NULL, NULL)
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Cours->_remap('addForm', 'cote')
+#11 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cours))
+#12 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+ERROR - 2022-10-16 02:27:51 --> Unknown column 'matiere_ordre_bulletin' in 'order clause'
+CRITICAL - 2022-10-16 02:27:51 --> Unknown column 'matiere_ordre_bulletin' in 'order clause'
+#0 C:\xampp\htdocs\students\espunilu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\students\espunilu\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\students\espunilu\app\Controllers\Student.php(149): App\Models\AppModel->fetch_cotes_bulletin(Array, 'matiere_ordre_b...', 'ASC')
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Student.php(42): App\Controllers\Student->bulletin('202210161665877...', '202210161665876...', NULL)
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Student->_remap('bulletin', '202210161665877...', '202210161665876...')
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-16 02:36:46 --> Undefined variable $ecole
+#0 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#2 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-16 02:37:09 --> Undefined variable $annee_scolaire
+#0 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#2 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-16 02:37:36 --> Undefined variable $type
+#0 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 34)
+#1 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#2 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-10-16 02:37:58 --> Invalid file: app/rapport/cursus/grille.php
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app/rapport/cur...')
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/rapport/cur...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\app.php(527): view('app/rapport/cur...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(36): view('layouts/app', Array)
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-16 02:38:29 --> Undefined variable $count
+#0 C:\xampp\htdocs\students\espunilu\app\Views\app\rapports\cursus\grille.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23)
+#1 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/rapports/cu...', Array, true)
+#4 C:\xampp\htdocs\students\espunilu\app\Views\layouts\app.php(527): view('app/rapports/cu...')
+#5 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#8 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(36): view('layouts/app', Array)
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#10 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#11 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-16 02:46:45 --> Undefined variable $annee_scolaire
+#0 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 32)
+#1 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#2 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-16 02:58:59 --> Unknown column 'ts_classes.classe_uid' in 'where clause'
+CRITICAL - 2022-10-16 02:58:59 --> Unknown column 'ts_classes.classe_uid' in 'where clause'
+#0 C:\xampp\htdocs\students\espunilu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\students\espunilu\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(170): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(40): App\Models\AppModel->fetch_all_data('vs_cotes_eleves', Array, 'cote_created_at')
+#6 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-16 03:00:48 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(256): count(NULL)
+#1 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(43): App\Models\AppModel->fetch_join_classes(Array, 'classe_created_...', 'row')
+#2 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#4 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-10-16 03:28:12 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/rapports/cu...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\app.php(527): view('app/rapports/cu...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(55): view('layouts/app', Array)
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->grille()
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-10-16 03:35:27 --> Table 'deliberation.ts_presences' doesn't exist
+CRITICAL - 2022-10-16 03:35:27 --> Table 'deliberation.ts_presences' doesn't exist
+#0 C:\xampp\htdocs\students\espunilu\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\students\espunilu\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\students\espunilu\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\students\espunilu\app\Models\AppModel.php(735): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(89): App\Models\AppModel->fetch_status_data('ts_presences', Array, 'presence_date')
+#6 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->students()
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-16 03:36:13 --> Invalid file: app/rapports/eleves/.php
+#0 C:\xampp\htdocs\students\espunilu\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app/rapports/el...')
+#1 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('app/rapports/el...', Array, true)
+#2 C:\xampp\htdocs\students\espunilu\app\Views\layouts\app.php(527): view('app/rapports/el...')
+#3 C:\xampp\htdocs\students\espunilu\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\students\espunilu\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\students\espunilu\system\Common.php(1097): CodeIgniter\View\View->render('layouts/app', Array, true)
+#6 C:\xampp\htdocs\students\espunilu\app\Controllers\Office.php(94): view('layouts/app', Array)
+#7 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(824): App\Controllers\Office->students()
+#8 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Office))
+#9 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-16 03:46:09 --> Undefined variable $groupe
+#0 C:\xampp\htdocs\students\espunilu\app\Controllers\Admin.php(362): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 362)
+#1 C:\xampp\htdocs\students\espunilu\app\Controllers\Admin.php(48): App\Controllers\Admin->saveCompteAgent('update', '202206041654342...', NULL)
+#2 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(822): App\Controllers\Admin->_remap('saveCompteAgent', 'update', '202206041654342...')
+#3 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\students\espunilu\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\students\espunilu\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
