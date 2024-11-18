@@ -47,21 +47,21 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost='mail.ditotase.com';
+    public $SMTPHost='mail.domain.com';
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = 'admin@ditotase.com';
+    public $SMTPUser = 'admin@domain.com';
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = '*21.anm@ZAD$243';
+    public $SMTPPass = 'password';
 
     /**
      * SMTP Port
